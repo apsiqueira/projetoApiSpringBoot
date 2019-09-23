@@ -1,0 +1,17 @@
+package com.example.comercial.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+public class OportunidadeController {
+	
+	
+@RestController
+
+	public String listar() {
+		
+		return "hello";
+		
+		
+	}
+	
+}

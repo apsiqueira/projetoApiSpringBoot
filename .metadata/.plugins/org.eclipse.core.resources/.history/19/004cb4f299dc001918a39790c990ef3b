@@ -1,0 +1,31 @@
+package com.example.comercial.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.comercial.model.Oportunidade;
+
+
+
+
+@RestController   /*fala que e um controlador rest que responde a requisiçoes http*/
+@RequestMapping("/oportunidades")   // mapeando na uri da requisição
+public class OportunidadeController {
+	
+	
+
+   @GetMapping //responde a requisçoes http do tipo Get
+	public String listar() {
+	   
+	   Oportunidade oportunidade=new Oportunidade();
+	   oportunidade.setId(1l);
+	   oportunidade.setDescricao("analista de sistemas");
+	   oportunidade.setNomePrspecto("Softwares Brasil");
+		
+		return "hello";
+		
+		
+	}
+	
+}
